@@ -8,7 +8,7 @@ const port = process.env.PORT || 80 || 8080 || 3333 || 3000;
 
 app.use(express.static('files'));
 
-app.get('/', (req, res) {
+app.get('/', (req, res) => {
   res.send('Essa página aida está em manuntenção!<br><br><a href="/sozinhol">Clique aqui para ai para uma de exemplo!</a><br><br>Depois mude "sozinhol" por algum perfil do GitHub!')
 });
 
