@@ -157,5 +157,5 @@ app.get('/:username', async (req, res) => {
 // });
 
 app.listen(port, () => {
-  console.log(port);
+  console.log('port:', port);
 })
