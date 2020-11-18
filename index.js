@@ -109,7 +109,7 @@ app.get('/:username', async (req, res) => {
                       <p>Twitter: ${linkTwitter}</p>
                       <p>Blog: ${linkBlog}</p>
                       <p>Perfil GitHub: <a spellcheck="false" href="${dataUser.profile}" rel="nofollow" target="_blank" dir="auto">${dataUser.profile}</a></p>
-                      <p>Moro em/no ${dataUser.location}</p>
+                      <p>Eu sou de ${dataUser.location}</p>
                       <p>Sobre mim: <span>${dataUser.bio}</span></p>
                     </div>
                   </section>
