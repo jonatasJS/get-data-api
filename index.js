@@ -12,10 +12,8 @@ app.get('/:username', async (req, res) => {
   const userName = await req.params.username;
   
   (async () => {
-    console.log('teste: '+userName);
     // https://api.github.com/users/sozinhol
     await axios.get(`https://api.github.com/users/${userName}`).then(async e => {
-      console.log(`https://api.github.com/users/${userName}`);
       const dataUser = {
         name: await e.data.name,
         login: await e.data.login,
