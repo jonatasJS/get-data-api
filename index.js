@@ -21,6 +21,9 @@ app.get('/', (req, res) => {
   }
 
   const input = `
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
   <from>
     <input type="text" name="name" id="name" required placeholder="Digite um login do GitHub!"/>
     <input onclick="getName()" type="submit" value="BUSCAR">
@@ -41,10 +44,8 @@ app.get('/:username', async (req, res) => {
   const userName = await req.params.username;
   
   (async () => {
-    console.log('teste: '+userName);
     // https://api.github.com/users/sozinhol
     await axios.get(`https://api.github.com/users/${userName}`).then(async e => {
-      console.log(`https://api.github.com/users/${userName}`);
       const dataUser = {
         name: await e.data.name,
         login: await e.data.login,
@@ -78,6 +79,8 @@ app.get('/:username', async (req, res) => {
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
                   <title>${dataUser.name} (${dataUser.login})</title>
                   <link rel="shortcut icon" href="${dataUser.avatarUrl}" type="image/x-icon">
+                  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
                   <style>
                     body {
                       background: rgb(70, 142, 236);
