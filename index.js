@@ -10,6 +10,7 @@ const port    = process.env.PORT || 80 || 8080 || 3333 || 3000;
 app.use(express.static('files'));
 
 app.get('/', (req, res) => {
+<<<<<<< HEAD
   function getName() {
     // const host = document.location.host;
     const nameUser = document.querySelector('input').value;
@@ -38,6 +39,9 @@ app.get('/', (req, res) => {
   <script>${getName}</script>`
    res.send(input);
   // res.send('Essa página aida está em manuntenção!<br><br><a href="/sozinhol">Clique aqui para ai para uma de exemplo!</a><br><br>Depois mude "sozinhol" por algum perfil do GitHub!')
+=======
+  res.send('<h1>Essa página aida está em manuntenção!</h1><br><br><a href="/sozinhol">Clique aqui para ai para uma de exemplo!</a><br><br><span>Depois mude "sozinhol" por algum perfil do GitHub!</span>')
+>>>>>>> 1ee9ff5d6eca47f65ea909a61754efbd8ddb949c
 });
 
 app.get('/:username', async (req, res) => {
@@ -141,7 +145,7 @@ app.get('/:username', async (req, res) => {
                       <p>Twitter: ${linkTwitter}</p>
                       <p>Blog: ${linkBlog}</p>
                       <p>Perfil GitHub: <a spellcheck="false" href="${dataUser.profile}" rel="nofollow" target="_blank" dir="auto">${dataUser.profile}</a></p>
-                      <p>Moro em/no ${dataUser.location}</p>
+                      <p>Eu sou de ${dataUser.location}</p>
                       <p>Sobre mim: <span>${dataUser.bio}</span></p>
                     </div>
                   </section>
@@ -189,5 +193,10 @@ app.get('/:username', async (req, res) => {
 // });
 
 app.listen(port, () => {
+<<<<<<< HEAD
   console.log('port:',port);
 })
+=======
+  console.log('port:', port);
+})
+>>>>>>> 1ee9ff5d6eca47f65ea909a61754efbd8ddb949c
