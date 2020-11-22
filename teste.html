@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" href="${dataUser.avatarUrl}" type="image/x-icon">
   <style>
     body {
       background: rgb(70, 142, 236);
       font: normal 15pt Arial;
+    }
+
+    h1 {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
     }
 
     header {
@@ -24,6 +31,13 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
     }
 
+    section#img {
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      max-height: 400px;
+    }
+
     footer {
       color: white;
       text-align: center;
@@ -37,7 +51,7 @@
     <p>Seu login é "${dataUser.login}"</p>
   </header>
   <section>
-    <div><a href="${dataUser.urlApi}"><img style="border-radius: 50%;" src="${dataUser.avatarUrl}"/><a></a></div>
+    <div id="img"><a href="${dataUser.urlApi}"><img style="border-radius: 50%;" src="${dataUser.avatarUrl}"/><a></a></div>
     <div>
       <p>Seu login é "${dataUser.login}"</p>
       <p>Twitter ${linkTwitter}</p>

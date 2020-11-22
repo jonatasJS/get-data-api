@@ -1,12 +1,41 @@
 const express = require('express');
-const axios = require('axios');
-const app = express();
-const port = process.env.PORT || 80 || 8080 || 3333 || 3000;
+const axios   = require('axios');
+const fs      = require('fs');
+const app     = express();
+const port    = process.env.PORT || 80 || 8080 || 3333 || 3000;
 
 // let userName = "filipedeschamps";
 // Amei te ver
 
 app.use(express.static('files'));
+
+app.get('/', (req, res) => {
+  function getName() {
+    // const host = document.location.host;
+    const nameUser = document.querySelector('input').value;
+    // const link = `http://${host}/${nameUser}`;
+    if(nameUser == '') return alert('Campo de nome está vazio!')
+
+    document.location.href = nameUser;
+    // document.location.href = link;
+  }
+
+  const input = `
+  <from>
+    <input type="text" name="name" id="name" required placeholder="Digite um login do GitHub!"/>
+    <input onclick="getName()" type="submit" value="BUSCAR">
+  </from>
+  <script>
+    document.addEventListener('keydown', e => {
+      if(e.key.toLocaleLowerCase() == 'enter') {
+        getName();
+      }
+    });
+  </script>
+  <script>${getName}</script>`
+   res.send(input);
+  // res.send('Essa página aida está em manuntenção!<br><br><a href="/sozinhol">Clique aqui para ai para uma de exemplo!</a><br><br>Depois mude "sozinhol" por algum perfil do GitHub!')
+});
 
 app.get('/:username', async (req, res) => {
   const userName = await req.params.username;
@@ -47,7 +76,7 @@ app.get('/:username', async (req, res) => {
                 <head>
                   <meta charset="UTF-8">
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                  <title>Document</title>
+                  <title>${dataUser.name} (${dataUser.login})</title>
                   <link rel="shortcut icon" href="${dataUser.avatarUrl}" type="image/x-icon">
                   <style>
                     body {
@@ -157,5 +186,5 @@ app.get('/:username', async (req, res) => {
 // });
 
 app.listen(port, () => {
-  console.log(port);
+  console.log('port:',port);
 })
