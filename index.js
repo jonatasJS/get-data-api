@@ -119,6 +119,7 @@ app.get('/kety', (req, res) => {
 
 app.get('/:username', async (req, res) => {
   const userName = await req.params.username;
+  if(userName == "kety" || userName == "Kety") return;
   
   (async () => {
     // https://api.github.com/users/sozinhol
