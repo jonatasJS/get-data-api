@@ -46,8 +46,8 @@ app.get('/kety', (req, res) => {
                 <head>
                   <meta charset="UTF-8">
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                  <title>${dataUser.name} (${dataUser.login})</title>
-                  <link rel="shortcut icon" href="${dataUser.avatarUrl}" type="image/x-icon">
+                  <title>Kettelyn</title>
+                  <link rel="shortcut icon" href="https://pps.whatsapp.net/v/t61.24694-24/129559646_3604515019597777_6562232797452939130_n.jpg?oh=69827610f7332b783a6d180b929ff816&oe=5FD9C408&t=s&u=556391187026@c.us&i=1607805286&n=Kfn8q5Qkm9wXI0lXQKJyEHZRt/xfmoJBlD41RrEavy8=" type="image/x-icon">
                   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
                   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
                   <style>
