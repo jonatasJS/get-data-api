@@ -29,12 +29,13 @@ app.get('/', (req, res) => {
     <input onclick="getName()" type="submit" value="BUSCAR">
   </from>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- getApiData02 -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
      data-ad-client="ca-pub-5593915309329672"
-     data-ad-slot="7115570514"></ins>
+     data-ad-slot="1915214729"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -112,12 +113,13 @@ app.get('/kety', (req, res) => {
                     <h1>Olá eu sou Kettelyn Amanda</h1>
                   </header>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- getApiData02 -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
      data-ad-client="ca-pub-5593915309329672"
-     data-ad-slot="7115570514"></ins>
+     data-ad-slot="1915214729"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -243,12 +245,13 @@ app.get('/:username', async (req, res) => {
                     <h1>Olá eu sou ${dataUser.name} (ID: ${dataUser.id})</h1>
                   </header>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- getApiData02 -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
      data-ad-client="ca-pub-5593915309329672"
-     data-ad-slot="7115570514"></ins>
+     data-ad-slot="1915214729"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -315,6 +318,17 @@ app.get('/:username', async (req, res) => {
      data-ad-layout-key="-fb+5w+4e-db+86"
      data-ad-client="ca-pub-5593915309329672"
      data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- getApiData02 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="1915214729"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
