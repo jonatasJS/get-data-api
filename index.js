@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
   }
 
   const input = `
-  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   
@@ -46,6 +45,7 @@ app.get('/', (req, res) => {
       }
     });
   </script>
+  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>${getName}</script>`
    res.send(input);
   // res.send('Essa página aida está em manuntenção!<br><br><a href="/sozinhol">Clique aqui para ai para uma de exemplo!</a><br><br>Depois mude "sozinhol" por algum perfil do GitHub!')
@@ -55,7 +55,6 @@ app.get('/kety', (req, res) => {
   res.send(`<!DOCTYPE html>
                 <html lang="pt">
                 <head>
-                  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                   <meta charset="UTF-8">
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
                   <title>Kettelyn</title>
@@ -145,6 +144,7 @@ app.get('/kety', (req, res) => {
                   <footer>
                     <p>&copy; <a spellcheck="false" href="https://github.com/sozinhoL" rel="nofollow" target="_blank" dir="auto">sozinhoL</a></p>
                   </footer>
+                  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 </body>
                 </html>`);
 });
@@ -185,7 +185,6 @@ app.get('/:username', async (req, res) => {
       res.send(`<!DOCTYPE html>
                 <html lang="pt">
                 <head>
-                  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                   <meta charset="UTF-8">
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
                   <title>${dataUser.name} (${dataUser.login})</title>
@@ -279,6 +278,7 @@ app.get('/:username', async (req, res) => {
                   <footer>
                     <p>&copy; <a spellcheck="false" href="https://github.com/sozinhoL" rel="nofollow" target="_blank" dir="auto">sozinhoL</a></p>
                   </footer>
+                  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 </body>
                 </html>`);
   }).catch(err => {
@@ -315,6 +315,7 @@ app.get('/:username', async (req, res) => {
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+                  <script data-ad-client="ca-pub-5593915309329672" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     `);
   });
   })();
