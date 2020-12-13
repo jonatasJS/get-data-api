@@ -29,6 +29,16 @@ app.get('/', (req, res) => {
     <input type="text" name="name" id="name" required placeholder="Digite um login do GitHub!"/>
     <input onclick="getName()" type="submit" value="BUSCAR">
   </from>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
   <script>
     document.addEventListener('keydown', e => {
       if(e.key.toLocaleLowerCase() == 'enter') {
@@ -101,6 +111,16 @@ app.get('/kety', (req, res) => {
                   <header>
                     <h1>Olá eu sou Kettelyn Amanda</h1>
                   </header>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                   <section>
                     <div class="img">
                       <a spellcheck="false" href="https://pps.whatsapp.net/v/t61.24694-24/129559646_3604515019597777_6562232797452939130_n.jpg?oh=69827610f7332b783a6d180b929ff816&oe=5FD9C408&t=s&u=556391187026@c.us&i=1607805286&n=Kfn8q5Qkm9wXI0lXQKJyEHZRt/xfmoJBlD41RrEavy8=" rel="nofollow" target="_blank" dir="auto">
@@ -112,6 +132,16 @@ app.get('/kety', (req, res) => {
                       <p>Não me quis antes não tem agora!</p>
                     </div>
                   </section>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                   <footer>
                     <p>&copy; <a spellcheck="false" href="https://github.com/sozinhoL" rel="nofollow" target="_blank" dir="auto">sozinhoL</a></p>
                   </footer>
@@ -211,6 +241,16 @@ app.get('/:username', async (req, res) => {
                   <header>
                     <h1>Olá eu sou ${dataUser.name} (ID: ${dataUser.id})</h1>
                   </header>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                   <section>
                     <div class="img">
                       <a spellcheck="false" href="${dataUser.urlApi}" rel="nofollow" target="_blank" dir="auto">
@@ -226,6 +266,16 @@ app.get('/:username', async (req, res) => {
                       <p>Sobre mim: <span>${dataUser.bio}</span></p>
                     </div>
                   </section>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                   <footer>
                     <p>&copy; <a spellcheck="false" href="https://github.com/sozinhoL" rel="nofollow" target="_blank" dir="auto">sozinhoL</a></p>
                   </footer>
@@ -255,6 +305,16 @@ app.get('/:username', async (req, res) => {
       </style>
       <h1>${err.message}</h1>
       <p>${stack.replace(/\n/g, "</p><p  style='text-indent: 50px;'>")}</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-5593915309329672"
+     data-ad-slot="7115570514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     `);
   });
   })();
